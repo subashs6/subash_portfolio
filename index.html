@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Subash's Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Subash's Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile" class="scroll-animate slide-up">
+      <div class="section__pic-container">
+        <img src="./assets/subashimg.jpeg" alt="Subash profile picture" />
+      </div>
+      <div class="section__text scroll-animate slide-up">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Subash</h1>
+        <p class="section__text__p2">Statistical Analyst</p>
+        <div class="btn-container scroll-animate slide-up">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Subah_Bio.pdf', '_blank')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container" class="scroll-animate slide-up">
+          <a href="https://www.linkedin.com/in/subash-s-744517242/" target="_blank" class="social-icon linkedin">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:iamsubashsr6@gmail.com" class="social-icon email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container scroll-animate slide-up">
+          <img
+            src="./assets/about-pic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container scroll-animate slide-up">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years <br />Senior Data Analyst</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> BSc in Statistics <br />MSc in Statistics</p>
+            </div>
+          </div>
+          <div class="text-container scroll-animate slide-up">
+            <p>
+              Data Analyst with 3+ years of experience delivering Business Intelligence, Statistical Analytics,
+Forecasting, Marketing Analytics and Process Automation solutions. Proficient in Power BI, SQL,
+R, Advanced Excel, API Integration and Data Modeling, with hands on experience in Marketing Mix
+Modeling (MMM), Time Series Forecasting, Natural Language Processing (NLP) and KPI
+Analytics. Passionate about transforming complex data into actionable insights that drive strategic
+business decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+<!-- exprience -->
+
+<section id="experience" class="experience-section">
+  <h2 class="experience-title scroll-animate slide-up">Experience</h2>
+  <div class="timeline">
+
+    <div class="timeline-item left scroll-animate slide-right" onclick="activateCard(this)">
+      <div class="timeline-content">
+        <img src="assets/logo-zerogravity.webp" alt="Zero Gravity Groups Logo" class="company-logo1">
+        <h3 class="company">Zero Gravity Groups</h3>
+        <p class="role">Senior Data Analyst</p>
+        <span class="date">June 2025 - Present</span>
+      </div>
+    </div>
+
+    <div class="timeline-item right scroll-animate slide-left" onclick="activateCard(this)">
+      <div class="timeline-content">
+        <img src="assets/logo.png" alt="Vishnu Enterprises Logo" class="company-logo2">
+        <h3 class="company">Vishnu Enterprises</h3>
+        <p class="role">Data Analyst</p>
+        <span class="date">Aug 2023 - Feb 2025</span>
+      </div>
+    </div>
+
+    <div class="timeline-item left scroll-animate slide-right" onclick="activateCard(this)">
+      <div class="timeline-content">
+        <img src="assets/LOGO WEB_edited.avif" alt="SS Constructions Logo" class="company-logo3">
+        <h3 class="company">SS Constructions</h3>
+        <p class="role">MIS Analyst</p>
+        <span class="date">July 2022 - Feb 2023</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- SKILLS SECTION -->
+<section id="skills" class="scroll-animate slide-up">
+  <p class="section__text__p1 scroll-animate zoom-in">Explore My</p>
+  <h1 class="title scroll-animate zoom-in">Skills</h1>
+
+  <div class="skills-container">
+    <div class="skill-card">
+      <span>POWER BI</span>
+    </div>
+    <div class="skill-card">
+      <span>R STUDIO</span>
+    </div>
+    <div class="skill-card">
+      <span>EXCEL</span>
+    </div>
+    <div class="skill-card">
+      <span>SQL</span>
+    </div>
+    <div class="skill-card">
+      <span>SAS</span>
+    </div>
+    <div class="skill-card">
+      <span>FORECASTING MODELS</span>
+    </div>
+    <div class="skill-card">
+      <span>SPSS</span>
+    </div>
+   
+    <div class="skill-card">
+      <span>HYPOTHESIS TESTING</span>
+    </div>
+    <div class="skill-card">
+      <span>REGRESSION MODELS</span>
+      
+    </div>
+    <div class="skill-card">
+      <span>MARKET MIX MODELING</span>
+    </div>
+    <div class="skill-card">
+      <span>NLP TECHNIQUES</span>
+    
+    </div>
+    <div class="skill-card">
+      <span>PROCESS AUTOMATION</span>
+    
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+    <section id="projects" class="scroll-animate slide-up">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpeg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Millionaire Insights</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://tinyurl.com/ywzjm9um'"
+              >
+              Dropbox
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.jpeg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Heart Failure Survival Analysis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://tinyurl.com/3dz2v4hs'"
+              >
+                Dropbox
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Prediction of Mortality</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://tinyurl.com/3fx9v3j2'"
+              >
+              Dropbox
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact" class="contact-section scroll-animate slide-up">
+      <h5>Get in Touch</h5>
+      <h2>Contact Me</h2>
+    
+      <div class="contact-container">
+        <!-- Left Side -->
+        <div class="contact-left scroll-animate slide-up">
+          <h3>Let's Connect</h3>
+          <p>
+            I’m a data analyst passionate about solving problems and helping others grow.
+            Whether you need help with data insights, resume reviews, or optimizing your LinkedIn and Naukri profiles, feel free to reach out.
+            I’m also open to exploring new opportunities.
+          </p>
+    
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/subash-s-744517242/" class="social-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:iamsubashsr6@gmail.com" class="social-icon email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" class="social-icon portfolio"><i class="fa-solid fa-circle-nodes"></i></a>
+          </div>
+        </div>
+    
+        <!-- Right Side (Form) -->
+        <div class="contact-right scroll-animate slide-up">
+          <form id="contact-form">
+            <input type="text" name="name" placeholder="Enter Your Name" required />
+            <input type="email" name="email" placeholder="Enter Your Mail Id" required />
+            <input type="text" name="subject" placeholder="Enter Subject Of The Mail" required />
+            <textarea placeholder="Enter Your Message Here" name="paragraphy" rows="5" required></textarea>
+            <button type="submit">SUBMIT <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+          <p id="response-msg"></p>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo / Title -->
+        <h2 class="footer-logo">Subash</h2>
+    
+        <!-- Navigation Links -->
+        <ul class="footer-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    
+        <!-- Social Icons -->
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/subash-s-744517242/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:iamsubashsr6@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    
+        <!-- Copyright -->
+        <p class="footer-copy">
+          © 2025 Subash. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/16a8dcb72d.js" crossorigin="anonymous"></script>
+  </body>
+</html>
